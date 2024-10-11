@@ -1,2 +1,7 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script lang="ts">
+  let color = '#ff3e00';
+</script>
+
+<input type="color" bind:value={color} />
+
+<div style="background-color: {color}">Hello world!</div>
